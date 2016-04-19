@@ -1,0 +1,363 @@
+html{min-height:100%;
+
+background: #0a0819; /* Old browsers */
+background: -moz-linear-gradient(top,  #0a0819 1%, #1f3f60 48%, #ff6663 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#0a0819), color-stop(48%,#1f3f60), color-stop(100%,#ff6663)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #0a0819 1%,#1f3f60 48%,#ff6663 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #0a0819 1%,#1f3f60 48%,#ff6663 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #0a0819 1%,#1f3f60 48%,#ff6663 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #0a0819 1%,#1f3f60 48%,#ff6663 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0819', endColorstr='#ff6663',GradientType=0 ); /* IE6-9 */
+
+
+}
+body{  margin:0 auto;
+ background-image:url(../img/stardust.png); 
+}
+
+header{background-color:#0a0819 ;}
+nav{/* min-height:50px; *//* border:dotted 1px #3C3; */}
+main{ 
+  min-height: 500px;
+  position: relative;
+  margin:auto;
+  	display:flex;
+
+  	     
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b4ff14+1,86f4b8+100 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0a0819+1,1f3f60+48,ff6663+100 */
+
+}
+
+.divLeft{	flex:1 1 50%;
+
+	/* background-image:url(../img/stardust.png); */
+
+}
+
+
+.divRight{	flex:1 1 50%;
+	/* background-image:url(../img/stardust.png); */
+background-position: 30vw;
+	}
+
+
+.containerLeft {
+      width: 30vw;
+      height: 30vw;
+      margin: 5.5% auto 10%;
+      /* border: 1px solid #CCC; */
+      -webkit-perspective: 1000px;
+         -moz-perspective: 1000px;
+           -o-perspective: 1000px;
+              perspective: 1000px;
+     
+			  
+    }
+
+.containerRight {
+      width: 30vw;
+      height: 30vw;
+      margin: 5.5% auto 10%;
+      border: 1px solid #CCC;
+      -webkit-perspective: 1000px;
+         -moz-perspective: 1000px;
+           -o-perspective: 1000px;
+              perspective: 1000px;
+			  
+    }
+
+#cube {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+
+}
+
+#cube figure {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  /*border: 2px dotted #00FF84;*/
+ 
+  border: 1px solid #fff;
+ 
+   line-height: 196px;
+   font-size: 120px;
+   font-weight: bold;
+   color: white;
+   text-align: center;
+}
+
+ #cube .front  { 
+ }
+    #cube .back   {   }
+    #cube .right  {  }
+    #cube .left   { }
+    #cube .top    {  }
+    #cube .bottom { }
+
+
+    #cube .front  {
+      -webkit-transform: translateZ( 1vw );
+         -moz-transform: translateZ( 110px );
+           -o-transform: translateZ( 110px );
+              transform: translateZ( 15.1vw );
+    }
+    #cube .back   {
+      -webkit-transform: rotateX( -180deg ) translateZ( 100px );
+         -moz-transform: rotateX( -180deg ) translateZ( 100px );
+           -o-transform: rotateX( -180deg ) translateZ( 100px );
+              transform: rotateX( -180deg ) translateZ( 15.1vw );
+    }
+    #cube .right {
+      -webkit-transform: rotateY(   90deg ) translateZ( 100px );
+         -moz-transform: rotateY(   90deg ) translateZ( 100px );
+           -o-transform: rotateY(   90deg ) translateZ( 100px );
+              transform: rotateY(   90deg ) translateZ( 15.1vw);
+    }
+    #cube .left {
+      -webkit-transform: rotateY(  -90deg ) translateZ( 100px );
+         -moz-transform: rotateY(  -90deg ) translateZ( 100px );
+           -o-transform: rotateY(  -90deg ) translateZ( 100px );
+              transform: rotateY(  -90deg ) translateZ( 15.1vw);
+    }
+    #cube .top {
+      -webkit-transform: rotateX(   90deg ) translateZ( 100px );
+         -moz-transform: rotateX(   90deg ) translateZ( 100px );
+           -o-transform: rotateX(   90deg ) translateZ( 100px );
+              transform: rotateX(   90deg ) translateZ( 15.1vw);
+    }
+    #cube .bottom {
+      -webkit-transform: rotateX(  -90deg ) translateZ( 100px );
+         -moz-transform: rotateX(  -90deg ) translateZ( 100px );
+           -o-transform: rotateX(  -90deg ) translateZ( 100px );
+              transform: rotateX(  -90deg ) translateZ( 15.1vw);
+    }
+
+    #cube.show-front {
+      -webkit-transform: translateZ( -100px );
+         -moz-transform: translateZ( -100px );
+           -o-transform: translateZ( -100px );
+              transform: translateZ( -100px );
+    }
+    #cube.show-back {
+      -webkit-transform: translateZ( -100px ) rotateX( -180deg );
+         -moz-transform: translateZ( -100px ) rotateX( -180deg );
+           -o-transform: translateZ( -100px ) rotateX( -180deg );
+              transform: translateZ(-100px ) rotateX( -180deg );
+    }
+    #cube.show-right {
+      -webkit-transform: translateZ( -100px ) rotateY(  -90deg );
+         -moz-transform: translateZ( -100px ) rotateY(  -90deg );
+           -o-transform: translateZ( -100px ) rotateY(  -90deg );
+              transform: translateZ(-100px) rotateY(  -90deg );
+    }
+    #cube.show-left {
+      -webkit-transform: translateZ( -100px ) rotateY(   90deg );
+         -moz-transform: translateZ( -100px ) rotateY(   90deg );
+           -o-transform: translateZ( -100px ) rotateY(   90deg );
+              transform: translateZ(-100px ) rotateY(   90deg );
+    }
+    #cube.show-top {
+      -webkit-transform: translateZ( -100px ) rotateX(  -90deg );
+         -moz-transform: translateZ( -100px ) rotateX(  -90deg );
+           -o-transform: translateZ( -100px ) rotateX(  -90deg );
+              transform: translateZ( -100px ) rotateX(  -90deg );
+    }
+    #cube.show-bottom {
+      -webkit-transform: translateZ( -100px ) rotateX(   90deg );
+         -moz-transform: translateZ( -100px ) rotateX(   90deg );
+           -o-transform: translateZ( -100px ) rotateX(   90deg );
+              transform: translateZ( -100px ) rotateX(   90deg );
+    }
+
+#cube { transition: transform 1s; }
+#cube { transform: translateZ( -100px ); }
+
+
+.containerLeft #cube figure.front{background-image: url(../img/englewoodrangers3.jpg); background-repeat:no-repeat; background-size:contain;}
+.containerLeft #cube figure.back{background-image: url(../img/bad_reception_tv9.jpg); background-repeat:no-repeat; background-size:contain;} 
+.containerLeft #cube figure.right{background-image: url(../img/fiestaLatina.jpg); background-repeat:no-repeat; background-size:contain;} 
+.containerLeft #cube figure.left{background-image: url(../img/boudoirSqr2.jpg); background-repeat:no-repeat; background-size:contain;} 
+.containerLeft #cube figure.top{background-image: url(../img/phoenix.jpg); background-repeat:no-repeat; background-size:contain;} 
+.containerLeft #cube figure.bottom{background-image: url(../img/openbook-1.jpg); background-repeat:no-repeat; background-size:contain;} 
+
+
+.containerRight #cube figure.front{background-image: url(../img/queen.jpg); background-repeat:no-repeat; background-size:contain;}
+.containerRight #cube figure.back{background-image: url(../img/kasalonlogo.jpg); background-repeat:no-repeat; background-size:contain;} 
+.containerRight #cube figure.right{background-image: url(../img/diary.png); background-repeat:no-repeat; background-size:contain;} 
+.containerRight #cube figure.left{background-image: url(../img/IMG_0297-1.jpg); background-repeat:no-repeat; background-size:contain;} 
+.containerRight #cube figure.top{background-image: url(../img/corridor.jpg); background-repeat:no-repeat; background-size:contain;} 
+.containerRight #cube figure.bottom{background-image: url(../img/openbook-1.jpg); background-repeat:no-repeat; background-size:contain;} 
+
+
+
+#optionsLeft {	
+	display: flex;
+}
+
+
+#optionsRight {
+	display:flex;
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+
+#optionsLeft button {
+    /* width: 4vw; */
+    flex: 1 1 16%;
+}
+
+#optionsRight button {
+    /* height:4vw; */
+    /* width: 4vw; */
+    flex: 1 1 16%;
+}
+
+
+p#show-buttons {
+    display: flex;
+    width: 100%;
+    height: 6vw;
+}
+
+
+p#show-buttons2 {
+    display: flex;
+    width: 100%;
+    height: 6vw;
+    flex-direction: row-reverse;
+}
+
+p#show-buttons button:nth-of-type(1){
+	background-image: url(../img/englewoodrangersThumb.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+p#show-buttons button:nth-of-type(2){
+	background-image: url(../img/bad_receptionThumb.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+p#show-buttons button:nth-of-type(3){
+	background-image: url(../img/fiestaLatinaThumb.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+p#show-buttons button:nth-of-type(4){
+	background-image: url(../img/boudoirThumb.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: 0 -.3vw;
+}
+
+
+p#show-buttons button:nth-of-type(5){
+	background-image: url(../img/phoenixThumb.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: 0 -.3vw;
+}
+
+
+p#show-buttons button:nth-of-type(6){
+	background-image: url(../img/openbookThumb.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+
+p#show-buttons button:nth-of-type(7){ background-position:0 -2vw; background-color:rgba(250, 200, 200, .2);}
+
+
+
+p#show-buttons button{	transition: all .3s ease-in-out;
+	color: #fff;	font-size: 3em;}
+
+p#show-buttons button:hover{flex:1 1 30%; background-position:0 -4vw ;  font-size:5em;}
+p#show-buttons button:nth-of-type(1):hover{ background-position:0 -2vw;}
+p#show-buttons button:nth-of-type(3):hover{ background-position:0 -5vw;}
+p#show-buttons button:nth-of-type(4):hover{ background-position:0 -2vw;}
+
+
+
+
+
+p#show-buttons2 button{	transition: all .3s ease-in-out; color:#fff;font-size:3em;
+}
+
+
+
+p#show-buttons {
+    display: flex;
+    width: 100%;
+    height: 6vw;
+    margin-right: .1em;
+}
+
+
+p#show-buttons2 {
+    display: flex;
+    width: 100%;
+    height: 6vw;
+    flex-direction: row-reverse;
+    margin-left: .1em;
+}
+
+p#show-buttons2 button:nth-of-type(1){
+	background-image: url(../img/queenThumb.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+p#show-buttons2 button:nth-of-type(2){
+	background-image: url(../img/kasalonlogoThumb.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+p#show-buttons2 button:nth-of-type(3){
+	background-image: url(../img/diaryThumb.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+p#show-buttons2 button:nth-of-type(4){
+	background-image: url(../img/robot.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: 0 -.3vw;
+}
+
+
+p#show-buttons2 button:nth-of-type(5){
+	background-image: url(../img/corridorThumb.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: 0 -.3vw;
+}
+
+p#show-buttons2 button:nth-of-type(7){ background-position:0 -2vw; background-color:rgba(250, 200, 200, .2);}
+
+
+p#show-buttons2 button:hover{flex:1 1 30%; background-position:0 -5vw ;  font-size:5em;}
+
+
+
+.branding{background-image:url(../img/stardust.png);
+min-height: 2vw;}
+footer{}
+
+.footerText{
+min-height: 9vw;}
